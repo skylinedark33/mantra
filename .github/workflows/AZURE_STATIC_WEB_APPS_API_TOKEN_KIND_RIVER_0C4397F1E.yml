@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-          lfs: false
+          lfs: true
 
       - name: Build And Deploy
         uses: Azure/static-web-apps-deploy@v1
@@ -37,3 +37,4 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+
